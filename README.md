@@ -1,4 +1,4 @@
-# News-Scrape
+# News-Scrape https://cnetnewsscrape.herokuapp.com/
 All the News from CNET That's Fit to Scrape
 I created a web app that lets users view and leave comments on the latest news. But I did not actually write any articles; instead, I used Mongoose and Cheerio muscles to scrape news from CNET site.
 
@@ -34,7 +34,13 @@ Create a Heroku app in project directory.
 
 Run this command in Terminal/Bash window:
 
-heroku addons:create mongolab
+$ heroku login
+
+$ heroku apps:create cnetnewsscrape
+
+$ git push heroku master
+
+$ heroku addons:create mongolab
 
 This command will add the free mLab provision to the project.
 
