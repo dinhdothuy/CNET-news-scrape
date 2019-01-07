@@ -46,8 +46,10 @@ This command will add the free mLab provision to the project.
 
 connect mongo database to mongoose, do so the following way:
 // If deployed, use the deployed database. Otherwise use the local news database
+***
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news";
 mongoose.connect(MONGODB_URI);
+***
 
 Helpful Links
 
